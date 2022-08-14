@@ -1,0 +1,13 @@
+#implement a program that prompts the user for the name of a variable in camel case and outputs the
+#corresponding name in snake case. Assume that the user’s input will indeed be in camel case.
+camelCase = input('Please enter a camelcase string: ')
+#want snake_case on next line
+print('Snakecase of this string: ' , end = '')
+#loop through the letters
+for letter in camelCase:
+#see if letter is capitalized in camelCase
+    if letter.isupper():
+        print('_' + letter.lower(), end = "")
+    else:
+        print(letter, end = "")
+print()
